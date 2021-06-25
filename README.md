@@ -7,7 +7,7 @@ This project entails building the landing page for my new pizza restaurant. On t
 My pizza place gives customers the option of home/office delivery or visiting out restaurant.
 On this website, you can select as many pizzas as you want. Total delivery and cost charges shall be displayed at the checkout section. 
 ## 
-Gh-pages Live link: https://o-tenyo.github.io/portfolio-landing-page/
+Gh-pages Live link: https://o-tenyo.github.io/my-pizza-place/
 ## Setup/Installation Requirements
 * Use any text editor such as atom or vs code
 * Preferred browser is chrome but common browsers such as brave and mozilla firefox work too
