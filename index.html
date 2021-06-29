@@ -77,27 +77,18 @@
     <hr id="line" class="container">
     <div class="container">
         <div class="fill-form">
-            <h2>Fill in this Form</h2>
+            <h2>Data</h2>
             <form id="form">
-                <label for="start">Month Of Year:</label>
+                <label for="start">Number of Pizzas:</label>
                 <!-- <br> -->
-                <input type="number" name="mm" id="month" placeholder="mm">
+                <input type="number" name="num" id="num" placeholder="##">
                 <br><br>
-                <label for="start">Day of Month:</label>
-                <!-- <br> -->
-                <input type="number" name="dd" id="day" placeholder="dd">
-                <br><br>
-                
-                <label for="start">Enter Year:</label>
-                <!-- <br> -->
-                <input type="number" name="yyyy" id="year" placeholder="yyyy">
-                <br><br>
-                <label for="">Select Gender:</label>
+                <label for="">Do you want it delivered?</label>
                 <br>
-                <input type="radio" name="gender" id="male" value="male">
-                <span id="male">Male</span>
-                <input type="radio" name="gender" id="female" value="female">
-                <span id="female">Female</span>
+                <input type="radio" name="delivery" id="yes" value="yes">
+                <span id="male">Yes</span>
+                <input type="radio" name="gender" id="no" value="no">
+                <span id="female">No</span>
                 <br><br>
                 <input type="button" value="Submit" name="submit" onclick="submissionClicked()" id="submit"> <span><button id="reset" type="reset">Reset</button></span>
             </form>
