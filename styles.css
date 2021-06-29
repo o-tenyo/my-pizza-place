@@ -1,6 +1,18 @@
 
-
+.jumbotron{
+    /* text-align: center; */
+    color: white;
+}
 .food {
     height: 300px;
     width: 100%;
+}
+body {
+    background-image: url("./background1.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#line{
+    color: white;
 }

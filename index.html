@@ -27,7 +27,7 @@
         <div class="row">
             <div class="col">
                 <div class="card" style="width: 20rem;">
-                    <img class="food" src="./background1.jfif" class="card-img-top" alt="Taslisman Restaurant">
+                    <img class="food" src="./card1.jfif" class="card-img-top" alt="Taslisman Restaurant">
                     <div class="card-body">
                       <h5 class="card-title">We have the following sizes</h5>
                     </div>
@@ -74,5 +74,37 @@
             </div>
         </div>
     </div>
+    <hr id="line" class="container">
+    <div class="container">
+        <div class="fill-form">
+            <h2>Fill in this Form</h2>
+            <form id="form">
+                <label for="start">Month Of Year:</label>
+                <!-- <br> -->
+                <input type="number" name="mm" id="month" placeholder="mm">
+                <br><br>
+                <label for="start">Day of Month:</label>
+                <!-- <br> -->
+                <input type="number" name="dd" id="day" placeholder="dd">
+                <br><br>
+                
+                <label for="start">Enter Year:</label>
+                <!-- <br> -->
+                <input type="number" name="yyyy" id="year" placeholder="yyyy">
+                <br><br>
+                <label for="">Select Gender:</label>
+                <br>
+                <input type="radio" name="gender" id="male" value="male">
+                <span id="male">Male</span>
+                <input type="radio" name="gender" id="female" value="female">
+                <span id="female">Female</span>
+                <br><br>
+                <input type="button" value="Submit" name="submit" onclick="submissionClicked()" id="submit"> <span><button id="reset" type="reset">Reset</button></span>
+            </form>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
