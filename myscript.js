@@ -64,7 +64,7 @@ function pricebyToppings(){
     }
     else if(document.getElementById('pepperoni').checked){    
         let toppings = document.getElementById('pepperoni');
-        priceOfTopping = 1050;
+        priceOfTopping = 105;
         return priceOfTopping;
     }
     else if(document.getElementById('onion').checked){
