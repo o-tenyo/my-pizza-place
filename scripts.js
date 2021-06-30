@@ -93,7 +93,6 @@ function eatAtRestaurant(){
 }
 //submissiom
 function submissionClicked(){
-    // alert("OK!");
     if(document.getElementById('yes').checked){  
         deliverFood();
     }
