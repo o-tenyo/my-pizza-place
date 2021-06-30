@@ -74,7 +74,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Available Crust types</h5>
                     </div>
-                    <select class="form-select" multiple aria-label="multiple select example">
+                    <select id="pizza-crust" class="form-select" multiple aria-label="multiple select example" onchange="crustByCrust()">
                         <option selected>Select Crust</option>
                         <option value="1" id="crispy">Crispy</option>
                         <option value="2" id="stuffed">Stuffed</option>
@@ -90,7 +90,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Availabe Toppings</h5>
                     </div>
-                    <select class="form-select" multiple aria-label="multiple select example">
+                    <select id="pizza-topping" class="form-select" multiple aria-label="multiple select example">
                         <option selected>Select toppings</option>
                         <option value="1" id="mushroom">Mushroom</option>
                         <option value="2" id="pepperoni">Pepperoni</option>

@@ -5,8 +5,8 @@ let priceOfTopping;
 let numberOfPizza;
 let priceOfPizza;
 let deliveryFee = 250;
-//this function returns the price of a specific pizza size
 
+//this function returns the price of a specific pizza size
 function priceBySize(){
     let valueOfSize = document.getElementById('pizza-size').value;
     if(valueOfSize==1){
@@ -28,6 +28,34 @@ function priceBySize(){
     else if(valueOfSize==5){
         priceOfSize = 2000;
         return priceOfSize;
+    }
+}
+//function to return prices of crust
+function priceByCrust(){
+    let valueOfCrust = document.getElementById('pizza-crust').value;
+    if(valueOfCrust==1){
+        priceOfSize = 220;
+        return priceOfCrust;
+    }
+    else if(valueOfCrust==2){
+        priceOfCrust = 300;
+        return priceOfCrust;
+    }
+    else if(valueOfCrust==2){
+        priceOfCrust = 190;
+        return priceOfCrust;
+    }
+    else if(valueOfCrust==3){
+        priceOfCrust = 350;
+        return priceOfCrust;
+    }
+    else if(valueOfCrust==4){
+        priceOfCrust = 400;
+        return priceOfCrust;
+    }
+    else if(valueOfCrust==5){
+        priceOfCrust = 280;
+        return priceOfCrust;
     }
 }
 
