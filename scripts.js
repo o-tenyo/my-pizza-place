@@ -6,6 +6,11 @@ let numberOfPizza;
 let priceOfPizza;
 let deliveryFee = 250;
 //this function returns the price of a specific pizza size
+let valueOfSize = document.getElementById('pizza-size').value;
+if(valueOfSize == 2){
+    console.log('medium');
+}
+
 function pricebySize(){
     if(document.getElementById('small').checked){   
         let size = document.getElementById('small');
@@ -79,26 +84,29 @@ function pricebyToppings(){
         return priceOfTopping;
     }
 }
-
-function deliverFood(){
-    numberOfPizza = document.getElementById('num');
+//delivery==YES
+function deliverFood(){  
+    numberOfPizza = document.getElementById('num').value;
     priceOfPizza = deliveryFee + (numberOfPizza * (pricebySize() + pricebyCrust() + pricebyToppings()));
 }
+//delivery==NO
 function eatAtRestaurant(){
-    pnumberOfPizza = document.getElementById('num');
+    pnumberOfPizza = document.getElementById('num').value;
     priceOfPizza = numberOfPizza * (pricebySize() + pricebyCrust() + pricebyToppings());
 }
-
+//submissiom
 function submissionClicked(){
-    // console.log('Works!!');
+    // alert("OK!");
     if(document.getElementById('yes').checked){  
         let delivery = document.getElementById('yes');
-        // console.log('yes')
         deliverFood();
     }
     else if(document.getElementById('no').checked){    
         let delivery = document.getElementById('no');
-        // console.log('no')
         eatAtRestaurant();
     }
+}
+
+if(document.getElementById('medium').value){
+    // alert('Ready!!');
 }
