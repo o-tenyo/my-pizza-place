@@ -81,13 +81,15 @@ function priceByToppings(){
 //delivery==YES
 function deliverFood(){  
     numberOfPizza = document.getElementById('num').value;
-    priceOfPizza = deliveryFee + (numberOfPizza * (pricebySize() + pricebyCrust() + pricebyToppings()));
+    priceOfPizza = deliveryFee + (numberOfPizza * (priceBySize() + priceByCrust() + priceByToppings()));
+    var location = prompt('Please enter your location: ');
+    alert(`Your order will be delivered to ${location}\nTotal amount: ${priceOfPizza}\nYour pizza shall e delivered in 30min.`);
 }
 //delivery==NO
 function eatAtRestaurant(){
     numberOfPizza = document.getElementById('num').value;
     priceOfPizza = numberOfPizza * (priceBySize() + priceByCrust() + priceByToppings());
-    
+    alert(`Total amount is ${priceOfPizza}\nWelcome to our Restaurant!!\nYour pizza shall be ready in 30min.\n`)
 }
 //submissiom
 function submissionClicked(){
