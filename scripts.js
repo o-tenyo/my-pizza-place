@@ -59,7 +59,7 @@ function priceByCrust(){
     }
 }
 //function to return prices of toppings
-function pricebyToppings(){
+function priceByToppings(){
     let valueOfToppings = document.getElementById('pizza-toppings').value;
     if(valueOfToppings==1){
         priceOfTopping = 110;
@@ -76,6 +76,27 @@ function pricebyToppings(){
     else if(valueOfToppings==2){
         priceOfTopping = 120;
         return priceOfTopping;
+    }
+}
+//delivery==YES
+function deliverFood(){  
+    numberOfPizza = document.getElementById('num').value;
+    priceOfPizza = deliveryFee + (numberOfPizza * (pricebySize() + pricebyCrust() + pricebyToppings()));
+}
+//delivery==NO
+function eatAtRestaurant(){
+    numberOfPizza = document.getElementById('num').value;
+    priceOfPizza = numberOfPizza * (priceBySize() + priceByCrust() + priceByToppings());
+    
+}
+//submissiom
+function submissionClicked(){
+    // alert("OK!");
+    if(document.getElementById('yes').checked){  
+        deliverFood();
+    }
+    else if(document.getElementById('no').checked){    
+        eatAtRestaurant();
     }
 }
 
