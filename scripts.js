@@ -41,20 +41,16 @@ function priceByCrust(){
         priceOfCrust = 300;
         return priceOfCrust;
     }
-    else if(valueOfCrust==2){
+    else if(valueOfCrust==3){
         priceOfCrust = 190;
         return priceOfCrust;
     }
-    else if(valueOfCrust==3){
+    else if(valueOfCrust==4){
         priceOfCrust = 350;
         return priceOfCrust;
     }
-    else if(valueOfCrust==4){
-        priceOfCrust = 400;
-        return priceOfCrust;
-    }
     else if(valueOfCrust==5){
-        priceOfCrust = 280;
+        priceOfCrust = 400;
         return priceOfCrust;
     }
 }
@@ -69,11 +65,11 @@ function priceByToppings(){
         priceOfTopping = 105;
         return priceOfTopping;
     }
-    else if(valueOfToppings==2){
+    else if(valueOfToppings==3){
         priceOfTopping = 130;
         return priceOfTopping;
     }
-    else if(valueOfToppings==2){
+    else if(valueOfToppings==4){
         priceOfTopping = 120;
         return priceOfTopping;
     }
@@ -83,13 +79,13 @@ function deliverFood(){
     numberOfPizza = document.getElementById('num').value;
     priceOfPizza = deliveryFee + (numberOfPizza * (priceBySize() + priceByCrust() + priceByToppings()));
     var location = prompt('Please enter your location: ');
-    alert(`Your order will be delivered to ${location}\nTotal amount: ${priceOfPizza}\nYour pizza shall be delivered in 30min.`);
+    alert(`Price by size: ${priceBySize()}\nPrice by crust: ${priceByCrust()}\nPrice by toppings: ${priceByToppings()}\nDelivery charges: ${deliveryFee}\nTotal amount: ${priceOfPizza}\nYour pizza shall be delivered to ${location} in 30min.`);
 }
 //delivery==NO
 function eatAtRestaurant(){
     numberOfPizza = document.getElementById('num').value;
     priceOfPizza = numberOfPizza * (priceBySize() + priceByCrust() + priceByToppings());
-    alert(`Total amount is ${priceOfPizza}\nWelcome to our Restaurant!!\nYour pizza shall be ready in 30min.\n`)
+    alert(`Price by size: ${priceBySize()}\nPrice by crust: ${priceByCrust()}\nPrice by toppings: ${priceByToppings()}\nTotal amount is ${priceOfPizza}\nWelcome to our Restaurant!!\nYour pizza shall be ready in 30min.\n`)
 }
 //submissiom
 function submissionClicked(){
