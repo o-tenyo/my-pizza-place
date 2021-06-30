@@ -83,7 +83,7 @@ function deliverFood(){
     numberOfPizza = document.getElementById('num').value;
     priceOfPizza = deliveryFee + (numberOfPizza * (priceBySize() + priceByCrust() + priceByToppings()));
     var location = prompt('Please enter your location: ');
-    alert(`Your order will be delivered to ${location}\nTotal amount: ${priceOfPizza}\nYour pizza shall e delivered in 30min.`);
+    alert(`Your order will be delivered to ${location}\nTotal amount: ${priceOfPizza}\nYour pizza shall be delivered in 30min.`);
 }
 //delivery==NO
 function eatAtRestaurant(){
