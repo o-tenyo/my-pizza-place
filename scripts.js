@@ -58,5 +58,33 @@ function priceByCrust(){
         return priceOfCrust;
     }
 }
+//function to return prices of toppings
+function priceByCrust(){
+    let valueOfCrust = document.getElementById('pizza-crust').value;
+    if(valueOfCrust==1){
+        priceOfSize = 220;
+        return priceOfCrust;
+    }
+    else if(valueOfCrust==2){
+        priceOfCrust = 300;
+        return priceOfCrust;
+    }
+    else if(valueOfCrust==2){
+        priceOfCrust = 190;
+        return priceOfCrust;
+    }
+    else if(valueOfCrust==3){
+        priceOfCrust = 350;
+        return priceOfCrust;
+    }
+    else if(valueOfCrust==4){
+        priceOfCrust = 400;
+        return priceOfCrust;
+    }
+    else if(valueOfCrust==5){
+        priceOfCrust = 280;
+        return priceOfCrust;
+    }
+}
 
 
